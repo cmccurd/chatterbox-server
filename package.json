@@ -10,7 +10,7 @@
   },
   "scripts": {
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash",
-    "start": "node server/basic-server.js",
+    "start": "nodemon server/basic-server.js",
     "test": "mocha server/spec",
     "lint": "eslint ./"
   },
@@ -19,5 +19,8 @@
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "mocha": "^8.2.1",
     "request": "^2.88.2"
+  },
+  "dependencies": {
+    "underscore": "^1.13.1"
   }
 }
